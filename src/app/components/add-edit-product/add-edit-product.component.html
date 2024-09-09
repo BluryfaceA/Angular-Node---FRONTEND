@@ -1,0 +1,56 @@
+
+<!--ngIf   =    Es lo mismo que un if() y se puede utilizar en propiedades-->
+<div class="row">
+
+    <div class="col-lg-4 offset-lg-4">
+
+        <div class="card border-secondary mb-3" style="max-width: 70rem;">
+
+            <div class="card-header text-center">{{operacion}} Producto</div>
+            <div class="card-body">
+                       
+                        <!--[formGroup]="formProducto" para conectar este form con el ts, donde convalidamos algunas cosas-->
+                        <form [formGroup]="formProducto" (submit)="addProduct()">
+
+                            <label for="name" class="form-label mt-4">Nombre:</label>
+                            <input formControlName="name" type="text" class="form-control" id="name"  placeholder="Ingrese su Nombre">
+            
+                            <label for="description" class="form-label mt-4">Descripcción:</label>
+                            <input formControlName="description" type="text" class="form-control" id="description" placeholder="Ingrese la Descripción">
+            
+                            <label for="price" class="form-label mt-4">Precio:</label>
+                            <input formControlName="price" type="number" class="form-control" id="price" placeholder="Ingrese el Precio">
+            
+                            <label for="stock" class="form-label mt-4">Cantidad de Stock:</label>
+                            <input formControlName="stock" type="number" class="form-control" id="stock"  placeholder="Ingrese la Cantidad de Stock">
+                            
+
+                            <div class="d-flex justify-content-end mt-3">
+                                <button type="button" class="btn btn-danger"  routerLink="/">Regresar</button>
+                                <button type="submit" class="btn btn-success ms-2" >Aceptar</button>
+                            </div>
+                              
+
+
+                        </form>
+                
+
+
+            </div>
+          </div>
+       
+          
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+

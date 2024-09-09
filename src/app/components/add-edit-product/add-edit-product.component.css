@@ -1,0 +1,8 @@
+.row{
+margin-top: 100px;
+}
+
+.botones{
+display: flex;
+ justify-content: end;
+}
